@@ -7,8 +7,10 @@ const reducer = (state, action) => {
             return state + 1
         case 'decrement':
             return state - 1
-        default:
+        case 'reset':
             return intialState
+        default:
+            return state
     }
 }
 
